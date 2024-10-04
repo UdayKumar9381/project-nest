@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Details</h1>
+        <form action="process_payment.php" method="post">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required><br></br>
+            
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required><br></br>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required><br></br>
+            
+        </form>
+        <form action="./thank you.html" method="POST">
+        <button type="submit">Pay Now</button>
+            <center><button><a href="./contact page.html"></a></button></center>
+        </br>
+      </form>
+    </div>
+</body>
+</html>

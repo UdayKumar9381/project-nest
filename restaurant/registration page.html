@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT REGISTERION FORM</title>
+    <style>
+        
+            body {
+            background-image: url('https://images.pexels.com/photos/4686940/pexels-photo-4686940.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(0 24% 4% / 0.944);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f48787f3;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #d30dda1a;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            height: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 90%;
+            padding: 8px;
+            border:  solid #52c911;
+            border-radius: 4px;
+        }
+
+        .form-group select {
+            width: 95%;
+            padding: 8px;
+            border:  solid hsl(123, 72%, 45%);
+            border-radius: 4px;
+        }
+
+        .form-group .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .password-container {
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        .password-input {
+            width: 92%;
+            padding: 8px;
+            border: 2px solid #2ded0f;
+            border-radius: 4px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>REGISTRATION FORM</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+91:">
+            </div>
+            <div class="form-group">
+                
+            </div>
+                <body>
+                    <div class="password-container"><h3>password</h3>
+                        <input type="password" id="password" class="password-input" required placeholder="STRONG PASSWORD">
+                        <span class="toggle-password" id="togglePassword">Show</span>
+                    </div>
+                
+                    <script>
+                        document.getElementById('togglePassword').addEventListener('click', function() {
+                            var passwordInput = document.getElementById('password');
+                
+                            if (passwordInput.type === 'password') {
+                                passwordInput.type = 'text';
+                                this.textContent = 'Hide';
+                            } else {
+                                passwordInput.type = 'password';
+                                this.textContent = 'Show';
+                            }
+                        });
+                    </script>
+                </body>
+            </div>
+            <class class="form-group">
+                <button type="submit" class="btn">Register</button>
+                <button><a href="./login page.html">login</a></button>
+            </class>
+        </form>
+    </div>
+</body>
+</html>
